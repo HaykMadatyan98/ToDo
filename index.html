@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+  <h1>Todo List</h1>
+    <table class="Main-Container">
+      <thead>
+        <tr>
+          <th>N</th>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Complited</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody class="Todos-Container">
+      </tbody>
+      <tfoot class="Add-Todo-Container">
+        <tr>
+          <td></td>
+          <td>
+            <input
+                  class="Add-Todo-title"
+                  type="text"
+                  placeholder="Enter Todo Title"
+          />
+          </td>
+          <td>
+            <input class="Add-Todo-reminder" type="datetime-local" />
+          </td>
+          <td colspan="2">
+            <button class="Add-Todo" disabled>Add Todo</button>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="Reminder-Container">
+    <div class="modal">
+      <h1>Todo Reminder</h1>
+      <p></p>
+      <button class="close">Close</button>
+    </div>
+  </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
